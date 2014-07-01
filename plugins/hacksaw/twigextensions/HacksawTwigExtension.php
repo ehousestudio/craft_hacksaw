@@ -15,7 +15,7 @@ class HacksawTwigExtension extends Twig_Extension
 	public function getFilters()
 	{
 		return array(
-			'hacksaw' => new Twig_Filter_Method($this, 'HacksawFilter'),
+			'hacksaw' => new Twig_Filter_Method( $this, 'HacksawFilter',['is_safe'=>['html']] )
 		);
 	}
 	
