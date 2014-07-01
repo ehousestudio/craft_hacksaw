@@ -19,10 +19,8 @@ class HacksawTwigExtension extends Twig_Extension
 		);
 	}
 	
-	public function HacksawFilter( $content, $chars='', $words='', $cutoff='', $append='', $allow='', $chars_start='' )
+	public function HacksawFilter( $content, $chars_start='0', $chars='', $words='', $cutoff='', $append='', $allow='' )
 	{
-	
-		$chars_start = ($chars_start ? $chars_start : 0);
 	
 		if(isset($cutoff) && $cutoff != "") {
 		
