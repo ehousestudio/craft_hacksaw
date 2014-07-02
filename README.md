@@ -4,8 +4,8 @@ A migrated (and improved) version (for [Craft CMS](http://buildwithcraft.com/)) 
 
 ## Installation
 
-1. Move the `hacksaw` directory to `craft/plugins` directory
-2. Enable the plugin under Craft Admin > Settings > Plugins
+1. Move `hacksaw` directory to `craft/plugins` directory
+2. Install the plugin under **Craft Admin &rsaquo; Settings &rsaquo; Plugins**
 
 ## Params
 
