@@ -5,53 +5,20 @@ A migrated (and improved) version (for [Craft CMS](http://buildwithcraft.com/)) 
 ## Installation
 
 1. Move `hacksaw` directory to `craft/plugins` directory
-2. Install the plugin under **Craft Admin &rsaquo; Settings &rsaquo; Plugins**
+2. Install **Hacksaw** under **Craft Admin &rsaquo; Settings &rsaquo; Plugins**
 
-## Params
+## Parameters
 
 There are several parameters you can use to control how the content is truncated. These options are:
 
-<table>
-<thead>
-<tr>
-<th>Param</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>chars (int)</td>
-<td></td>
-<td>Limit by number of characters (Note: includes html chars)</td>
-</tr>
-<tr>
-<td>chars_start (int)</td>
-<td>0</td>
-<td>Starting point for chars limit (used with chars param)</td>
-</tr>
-<tr>
-<td>words (int)</td>
-<td></td>
-<td>Limit by number of words</td>
-</tr>
-<tr>
-<td>cutoff (string)</td>
-<td></td>
-<td>Limit by a specific cutoff string</td>
-</tr>
-<tr>
-<td>append (string)</td>
-<td></td>
-<td>String to append to the end of the excerpt</td>
-</tr>
-<tr>
-<td>allow (string)</td>
-<td></td>
-<td>HTML tags you want to allow</td>
-</tr>
-</tbody>
-</table>
+| Parameter			| Type		| Default	| Description														|
+| -----------------	| :-------:	| :-------:	| -----------------------------------------------------------------	|
+| chars 			| int		| `null`	| Limit by number of characters (**Note:** includes chars of HTML)	|
+| chars_start		| int		| 0			| Starting point for chars limit (used with chars param)			|
+| words				| int		| `null`	| Limit by number of words											|
+| cutoff			| string	| `null`	| Limit by a specific cutoff string									|
+| append			| string	| `null`	| String to append to the end of the excerpt						|
+| allow				| string	| `null`	| HTML tags you want to allow										|
 
 ## Usage
 
