@@ -15,12 +15,12 @@ class HacksawPlugin extends BasePlugin
 
     function getDeveloper()
     {
-        return 'Ryan Shrum';
+        return 'eHouse Studio';
     }
 
     function getDeveloperUrl()
     {
-        return 'http://www.ryanshrum.com';
+        return 'http://www.ehousestudio.com';
     }
 
 	/**
