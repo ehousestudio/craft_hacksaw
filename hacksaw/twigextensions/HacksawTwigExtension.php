@@ -43,9 +43,6 @@ class HacksawTwigExtension extends Twig_Extension
 
 			// Strip the HTML
 			$stripped_content = strip_tags($content, $allow);
-			
-			// Convert everything to HTML entities
-			$stripped_content = htmlentities($content);
 
 			$new_content = (str_word_count($stripped_content) <= $words ? $stripped_content : $this->_truncate_words($stripped_content, $words, $append));
 
