@@ -30,14 +30,14 @@ class HacksawTwigExtension extends Twig_Extension
 			$cutoff_content = $this->_truncate_cutoff($content, $cutoff, $words, $allow, $append);
 
 			// Strip the HTML
-			$new_content = (strpos($content, $cutoff) ? strip_tags($cutoff_content, $allow) : strip_tags($cutoff_content, $allow));
+			$new_content = (mb_strpos($content, $cutoff) ? strip_tags($cutoff_content, $allow) : strip_tags($cutoff_content, $allow));
 
 		} elseif (isset($chars) && $chars != "") {
 
 			// Strip the HTML
 			$stripped_content = strip_tags($content, $allow);
 
-			$new_content = (strlen($stripped_content) <= $chars ? $stripped_content : $this->_truncate_chars($stripped_content, $chars_start, $chars, $append));
+			$new_content = (mb_strlen($stripped_content) <= $chars ? $stripped_content : $this->_truncate_chars($stripped_content, $chars_start, $chars, $append));
 
 		} elseif (isset($words) && $words != "") {
 
@@ -70,7 +70,7 @@ class HacksawTwigExtension extends Twig_Extension
 
 			$pos = array_keys($words);
 
-			$content = substr($content, 0, ($pos[$limit]-1)) . $append;
+			$content = mb_substr($content, 0, ($pos[$limit]-1)) . $append;
 
 		}
 
@@ -82,7 +82,7 @@ class HacksawTwigExtension extends Twig_Extension
 	function _truncate_chars($content, $chars_start, $limit, $append) {
 
 		// Removing the below to see how it effect UTF-8.
-	    $content = preg_replace('/\s+?(\S+)?$/', '', substr($content, $chars_start, ($limit+1))) . $append;
+	    $content = preg_replace('/\s+?(\S+)?$/', '', mb_substr($content, $chars_start, ($limit+1))) . $append;
 
 		return $content;
 
@@ -91,11 +91,11 @@ class HacksawTwigExtension extends Twig_Extension
 	// Helper Function - Truncate by Cutoff Marker
 	function _truncate_cutoff($content, $cutoff, $words, $allow, $append) {
 
-		$pos = strpos($content, $cutoff);
+		$pos = mb_strpos($content, $cutoff);
 
 		if ($pos != FALSE) {
 
-			$content = substr($content, 0, $pos) . $append;
+			$content = mb_substr($content, 0, $pos) . $append;
 
 		} elseif ($words != "") {
 
