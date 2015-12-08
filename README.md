@@ -1,6 +1,6 @@
 #Hacksaw
 
-**not yet updated for Craft 2.5**
+**Not yet updated for Craft 2.5**
 
 A migrated (and improved) version (for [Craft CMS](http://buildwithcraft.com/)) of Brett DeWoody's Hacksaw for ExpressionEngine. This plugin adds a [Twig](http://twig.sensiolabs.org/) filter to take your entry's content and whittle it down to a more manageable size. It strips the HTML and limits the excerpts by character count, word count or cutoff marker.
 
