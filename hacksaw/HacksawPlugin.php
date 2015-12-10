@@ -3,29 +3,36 @@ namespace Craft;
 
 class HacksawPlugin extends BasePlugin
 {
-    function getName()
+    public function getName()
     {
          return Craft::t('Hacksaw');
     }
 
-    function getVersion()
+    public function getVersion()
     {
-        return '1.0';
+        return '1.1.1';
     }
 
-    function getDeveloper()
+    public function getDeveloper()
     {
         return 'eHouse Studio';
     }
 
-    function getDeveloperUrl()
+    public function getDeveloperUrl()
     {
         return 'http://www.ehousestudio.com';
     }
 
-	/**
-	 * Register twig extension
-	 */
+    public function getPluginUrl()
+    {
+        return 'https://github.com/ehousestudio/craft_hacksaw';
+    }
+
+    public function getDocumentationUrl()
+    {
+        return $this->getPluginUrl() . '/blob/master/README.md';
+    }
+
     public function addTwigExtension()
     {
         Craft::import('plugins.hacksaw.twigextensions.HacksawTwigExtension');
