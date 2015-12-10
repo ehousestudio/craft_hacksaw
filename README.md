@@ -55,6 +55,9 @@ This would append "..." to the end of the excerpt.
 {{ entry.richTextField|hacksaw(words='100', allow='<a>', append='<a href="' ~ entry.url ~ '">Continue...</a>') }}
 ```
 
+##Roadmap
+- Add truncation by number of paragraphs
+
 ## Feedback?
 
 Contact me on Twitter: [@ryanshrum](https://twitter.com/ryanshrum) or [@ehousestudio](https://twitter.com/ehousestudio)
