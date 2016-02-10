@@ -1,4 +1,4 @@
-#Hacksaw 1.1.1
+#Hacksaw 1.1.2
 
 A simple text truncation plugin for [Craft CMS](http://buildwithcraft.com/). This plugin adds a [Twig](http://twig.sensiolabs.org/) filter to take your entry's content and hack it down to a more manageable size. It strips the HTML and limits the excerpts by character count, word count, or cutoff marker.
 
