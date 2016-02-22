@@ -1,0 +1,14 @@
+{
+    "name": "ehousestudio/craft_hacksaw",
+    "description": "A simple text truncation plugin for for Craft",
+    "authors": [
+        {
+            "name": "eHouse Studio",
+            "email": "hello@ehousestudio.com"
+        }
+    ],
+    "type": "craft-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
