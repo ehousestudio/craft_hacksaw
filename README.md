@@ -60,4 +60,4 @@ This would append "..." to the end of the excerpt.
 
 ## Feedback?
 
-Contact me on Twitter: [@ryanshrum](https://twitter.com/ryanshrum) or [@ehousestudio](https://twitter.com/ehousestudio)
+Contact us on Twitter: [@ehousestudio](https://twitter.com/ehousestudio)
