@@ -1,4 +1,6 @@
-#Hacksaw 1.1.2
+# Hacksaw 1.1.2
+
+## PLEASE READ: This repository is not maintained anymore. The latest version of Hacksaw for Craft lives here: https://github.com/ryanshrum/hacksaw
 
 A simple text truncation plugin for [Craft CMS](http://buildwithcraft.com/). This plugin adds a [Twig](http://twig.sensiolabs.org/) filter to take your entry's content and hack it down to a more manageable size. It strips the HTML and limits the excerpts by character count, word count, or cutoff marker.
 
@@ -55,7 +57,8 @@ This would append "..." to the end of the excerpt.
 {{ entry.richTextField|hacksaw(words='100', allow='<a>', append='<a href="' ~ entry.url ~ '">Continue...</a>') }}
 ```
 
-##Roadmap
+## Roadmap
+
 - Add truncation by number of paragraphs
 
 ## Feedback?
